@@ -1,0 +1,9 @@
+services:
+  openauth:
+    build:
+      context: .
+    volumes:
+      - openauth_data:/data
+
+volumes:
+  openauth_data:
