@@ -1,13 +1,7 @@
-import { authorizer, createSubjects } from "@openauthjs/openauth";
+import { authorizer } from "@openauthjs/openauth";
 import { PasswordAdapter } from "@openauthjs/openauth/adapter/password";
 import { PasswordUI } from "@openauthjs/openauth/ui/password";
-import { object, string } from "valibot"
-
-const subjects = createSubjects({
-  user: object({
-    userID: string(),
-  }),
-})
+import { subjects } from "./subjects";
 
 const app = authorizer({
   providers: {
