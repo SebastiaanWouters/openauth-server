@@ -30,7 +30,7 @@ const app = authorizer({
   },
   storage: MemoryStorage(
     {
-        persist: './data/persist.json'
+        persist: '/data/persist.json'
     }
   )
 })
