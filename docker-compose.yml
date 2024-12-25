@@ -2,6 +2,8 @@ services:
   openauth:
     build:
       context: .
+    environment:
+      - RESEND_API_KEY=${RESEND_API_KEY}
     volumes:
       - openauth_data:/data
 
